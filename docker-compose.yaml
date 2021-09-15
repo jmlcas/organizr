@@ -1,15 +1,15 @@
-  version: "3.3"
+version: "3.3"
   
-  services:
+services:
   
-  organizr:
-    image: organizr/organizr
-    container_name: organizr
-    restart: unless-stopped
-    environment:
-      - PUID=1000
-      - PGID=1000
-    volumes:
-      - ./data:/config
-    ports:
-      - "8980:80"
+organizr:
+  image: organizr/organizr
+  container_name: organizr
+  restart: unless-stopped
+  environment:
+    - PUID=1000
+    - PGID=1000
+  volumes:
+    - ./data:/config
+  ports:
+    - "8980:80"
