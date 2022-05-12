@@ -1,4 +1,6 @@
 # organizr
 Organizr - Docker-compose
 
-Ver en "localhost:8980"
+Ver en "localhost:8200"
+
+
