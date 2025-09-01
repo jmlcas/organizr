@@ -1,17 +1,19 @@
-version: '3'
-  
 services:
   
   organizr:
-    image: organizr/organizr
+    image: ghcr.io/organizr/organizr
     container_name: organizr
     restart: unless-stopped
+    ports:
+      - "8200:80"          
     environment:
       - PUID=1000
       - PGID=1000
+      - TZ=Europe/Madrid
+      - branch=v2-master # optional
+      - fpm="false"  # optional      
     volumes:
       - ./data:/config
-    ports:
-      - "8200:80"
+
       
-      
+
