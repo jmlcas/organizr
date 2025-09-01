@@ -9,11 +9,10 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Madrid
-      - branch=v2-master # optional
-      - fpm="false"  # optional      
+      - TZ=Europe/Madrid  
     volumes:
       - ./data:/config
 
       
+
 
